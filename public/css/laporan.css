@@ -1,0 +1,23 @@
+.container2{
+  padding-top: 100px;
+  padding-left: 160px;
+}
+
+.customForm{
+  width: 800px;
+  height: 200px;
+  padding-left: 120px;
+  padding-top: 40px;
+}
+body{
+  background-image: url(../img/houndstooth-pattern.png);
+}
+.footer{
+        background-color: #ffff00;
+        color: #00004d;
+        text-align: center;
+        height: 50px;
+        padding-top: 11px;
+        margin-top: 324px;
+
+}

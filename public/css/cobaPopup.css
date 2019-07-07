@@ -1,0 +1,160 @@
+      .overlay{
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,0);
+  z-index: 9999999;
+  transition: .8s;
+  text-align: center;
+  padding: 125px 0;
+  margin: auto;
+
+}
+.overlay:target{
+  width: auto;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.6);
+}
+.overlay:target .close{
+  animation: slideDown .5s .5s forwards;
+}
+.containerPopup{
+  width: 400px;
+  height: 350px;
+  background-color:#000033;
+  margin: auto;
+  border-radius: 30px;
+  padding-top: 20px;
+}
+.containerPopup h1{
+font-size: 25px;
+}
+.containerPopup p{
+font-size: 13px;
+}
+
+.overlay .close{
+  font-family: arial;
+  position: absolute;
+  top:90px;
+  left:50%;
+  margin-left: -40px;
+  color:black;
+  text-decoration: none;
+  font-size: 30px;
+  opacity: 0;
+}
+.overlay:target .close{
+  animation: slideDown .5s .5s forwards;
+}
+
+.containerPilih{
+    margin: auto;
+    width: 900px;
+  }
+  .containerPilih li{
+    float: left;
+    border-radius: 20px;
+  }
+  .containerPilih h3{
+    text-align: center;
+  }
+  .pilihan li{
+    width: 95px;
+    height: 150px;
+    border:1px solid #ffff00;
+    float: left;
+    margin-left: 10px;
+    position:relative; 
+    list-style: none;
+    padding-left: 5px;
+    padding-top: 20px;
+  }
+  .pilihan img{
+    width: 60px;
+    height: 60px;
+  }
+  .pilihan li p{
+    font-size: 12px;
+    margin-top: -30px;
+  }
+  @media (min-width: 768px){
+    .containerPopup{
+    width: 700px;
+    height: 530px;
+    background-color:#000033;
+    margin: auto;
+    border-radius: 30px;
+    padding-top: 20px;
+    }
+    .containerPopup h1{
+font-size: 35px;
+}
+.containerPopup p{
+font-size: 16px;
+}
+
+    /*isi dari pop up*/
+    .pilihan li{
+    width: 190px;
+    height: 300px;
+    border:1px solid #ffff00;
+    float: left;
+    margin-left: 15px;
+    position:relative; 
+    list-style: none;
+    padding-left: 5px;
+    padding-top: 40px;
+    }
+    .pilihan img{
+    width: 120px;
+    height: 120px;
+    }
+    .pilihan li p{
+    font-size: 20px;
+    }
+    
+  }
+  @media (min-width: 768px){
+    .containerPilih input{
+    margin-left: 240px;
+    }
+    .containerPilih button{
+    margin-left: 300px;
+    }
+
+  }
+
+  .containerPilih input{
+    margin-right: 500px;
+  }
+  .containerPilih button{
+    margin-right: 500px;
+  }
+
+  
+  .pilihan li a{
+    text-decoration: none;
+    font-size: 30px;
+
+  }
+  .pilihan li a p{
+    text-align: center;
+    padding-top: 40px;
+  }
+@keyframes slideDown{
+  0%{
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 0;
+  }
+
+}
